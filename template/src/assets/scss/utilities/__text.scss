@@ -1,0 +1,4 @@
+@each $color,
+$value in $theme-colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}

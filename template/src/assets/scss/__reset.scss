@@ -11,10 +11,14 @@
 // Document
 //
 // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 // Shim for IE11

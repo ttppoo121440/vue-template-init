@@ -1,4 +1,4 @@
-import { get } from "@/plugins/axios";
+import { get } from "@/plugins/Axios";
 
 /**
  * 測試

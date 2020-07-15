@@ -7,6 +7,19 @@ const Request = axios.create({
   baseURL: process.env.VUE_APP_API,
 });
 
+// Token 攔截器
+// Request.interceptors.request.use(
+//   config => {
+//     if (store.state.token) {
+//       config.headers.Authorization = store.state.token
+//     }
+//     return config
+//   },
+//   error => {
+//     return Promise.reject(error)
+//   }
+// )
+
 const httpCode = {
   401: () => {
     console.log("請重新登入");
